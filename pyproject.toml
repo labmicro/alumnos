@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "alumnos"
+version = "0.1.0"
+description = "Seguimiento de alumnos para la FACET"
+authors = ["Esteban Volentini <evolentini@herrera.unt.edu.ar>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.0.4"
+django-jazzmin = "^3.0.0"
+Scrapy = "^2.11.1"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+extend-exclude = '''
+'''
+include = '\.pyi?$'
+line-length = 88

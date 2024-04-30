@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/__pycache__": true,
+    ".venv": true
+  },
+  "files.refactoring.autoSave": false
+}
